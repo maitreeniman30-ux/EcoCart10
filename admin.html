@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<h2>Admin Login</h2>
+<p>ID: Maitree29 | Password: 001</p>
+
+<input id="aid" placeholder="Admin ID">
+<input id="apass" type="password" placeholder="Password">
+<button onclick="adminLogin()">Login</button>
+
+<div id="adminPanel" class="hidden">
+
+<h3>Orders</h3>
+<table>
+<tr><th>Name</th><th>Email</th><th>Order</th></tr>
+<tbody id="orders"></tbody>
+</table>
+
+<h3>Add Product</h3>
+<input id="pname" placeholder="Product Name">
+<input id="pprice" placeholder="Price">
+<input id="peco" placeholder="Eco Benefit">
+<input id="pimg" placeholder="Image URL">
+<button onclick="addProduct()">Add</button>
+
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
